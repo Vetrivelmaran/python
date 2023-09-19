@@ -10,5 +10,7 @@ class employee:
         print("the employee salry is ",self.salry)
         print("the employee role is ",self.role)
 ob = employee('vetrive',21,400000,'python developer')        
-print(list[ob.name,ob.age,ob.role,])
+print([ob.name,ob.age,ob.role])
 ob.detail_empl()
+
+
