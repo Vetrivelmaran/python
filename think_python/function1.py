@@ -72,5 +72,4 @@ right_justify('vetri')"""
 #       print('+','-'*4,'+','-'*4,'+')
 #     else:                                                 ----------------> ok
 #       print('|'+('  '*3)+'|'+('  '*3)+'|')
-def MyFunction():
-    print('this is other modual function')
+
