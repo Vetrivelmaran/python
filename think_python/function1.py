@@ -118,3 +118,5 @@ right_justify('vetri')"""
 # print(ob.val[2]) 
 # ob.val[1]=233434
 # print(ob.val)
+# Example: Creating a simple function decorator
+# Example: Unpacking values from an iterable    
