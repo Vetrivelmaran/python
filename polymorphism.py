@@ -10,7 +10,7 @@
                     |                                   |
                     |                                   | 
                     |          *method  overloading------
-                    |--------->*method  overriding
+                    |--------->*method  overwritie
                                *operator overloading
 """
 
@@ -38,7 +38,7 @@ obj = new1()
 obj.over(10,20,30,40)"""
 
 
-#                                  method overriding
+#                                  method overrinding
 """class mugil:
     def project(self):
         print("confrence management system \n")
@@ -60,21 +60,17 @@ ob.project()"""
 #                                  operator overloding
 
                     # operator overloding used to perfome the +,-,*,/ between two objects
-class project:
-    def __init__(self,a) -> None:
-        self.a=a
+# class project:
+#     def __init__(self,a) -> None:
+#         self.a=a
        
-    def __add__(self,other):
-        return self.a+other.a
-    def __mul__(self,new):
-        return self.a*new.a            
+#     def __add__(self,other):
+#         return self.a+other.a
+#     def __mul__(self,new):
+#         return self.a*new.a            
 
-obj1 = project(10)
-obj2 = project(20)
-print('sum value:',obj1+obj2)   #---> here we add two abjects
-print('sum value:',obj1*obj2)
-
-
-
-
+# obj1 = project(10)
+# obj2 = project(20)
+# print('sum value:',obj1+obj2)   #---> here we add two abjects
+# print('sum value:',obj1*obj2)
 

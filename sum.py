@@ -1,8 +1,21 @@
-class formar:
-    def __init__(self,name,age,spa):
-        self.name=name
-        self.age=age
-        self.spa=spa
-a=formar('vetri',5,876235423)
-print(a.name)
+# import pickle
 
+# data = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+# # Serialize the data to a file
+# with open('data.pkl', 'wb') as file:
+#     pickle.dump(data, file)
+
+# # Deserialize the data from the file
+# with open('data.pkl', 'rb') as file:
+#     loaded_data = pickle.load(file)
+
+# print(loaded_data)
+import pickle
+tex ='Hi is this vetri script '
+with open('new.pkl','wb') as file:
+    pickle.dump(tex,file)
+    file.close()
+with open('new.pkl','rb') as file:
+    loded_string=pickle.load(file)
+print(loded_string)

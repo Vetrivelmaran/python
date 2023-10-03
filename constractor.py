@@ -1,16 +1,15 @@
-class employee:
-    def __init__(self,name,age,salry,role):
-        self.name=name
-        self.age=age
-        self.salry=salry
-        self.role=role   
-    def detail_empl(self):
-        print("the employee name is ",self.name)
-        print("the employee age is ",self.age)
-        print("the employee salry is ",self.salry)
-        print("the employee role is ",self.role)
-ob = employee('vetrive',21,400000,'python developer')        
-print([ob.name,ob.age,ob.role])
-ob.detail_empl()
-
+class robot():
+    def __init__(self,n,a,w) -> None:
+        self.name=n
+        self.color=a
+        self.weight=w
+    def introduce(self):
+        print(f'hello i am {self.name}')
+    def idenity(self):
+        print(f'you can idenify with my color {self.color}')
+r1=robot('vetri','red',300)
+# r1.name='vetri'
+r2=robot('pravin','block',400)
+r1.introduce()
+r2.idenity()
 

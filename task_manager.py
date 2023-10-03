@@ -91,5 +91,3 @@ if __name__ == "__main__":
     task_manager = TaskManager()
     task_manager.load_tasks('tasks.pkl')
     task_manager.run()
-
-
