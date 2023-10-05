@@ -24,8 +24,10 @@
 # print(MyFunction())
 # result = upperstring(MyFunction)
 # print(result())
-import pickle
-a=[1,2,3,5]
-dump=pickle.dumps(a)
-b=pickle.loads(dump)
-print(a==b)
+
+#----------------------------------pickel  objects are deiferent after dumps
+# import pickle
+# a=[1,2,3,5]
+# dump=pickle.dumps(a)
+# b=pickle.loads(dump)
+# print(a is b)
