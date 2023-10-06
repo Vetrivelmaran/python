@@ -93,43 +93,79 @@
 #     task_manager.run()
 
 import pickle
-class practice:
-    def __init__(self,name) -> None:
+class Task:
+    def __init__(self,name,description,status=False):
         self.name=name
+        self.description=description
+        self.status=status
+        
+    def mark_task(self):
+        self.status=True
     def __str__(self) -> str:
-        return f'hello {self.name}'
-class data:
-    def __init__(self) -> None:
+        return f"task :{self.name}\ndescription : {self.description}\n status : {self.status}"
+class TaskManager:
+    def __init__(self):
         self.task=[]
-    def colect(self):
-        object =practice(input('enter the command:'))
-        self.task.append(object)
-    def save(self,filename):
+    def add_task(self,task):
+        self.task.append(task)
+        print('task added succesfuly !')
+    def view_task(self):
+        if not self.task:
+            print(' task not found')        
+        else:
+            ('task list :')
+            for i,j in enumerate(self.task,1):
+                print(f'{i} .{j}')
+    def remove_task(self):
+        self.view_task()
+        task_no =int(input('enter the number:'))-1
+        if 0<=task_no<len(self.task)-1:
+            del self.task[task_no]
+        else:
+            print('somthing wrong in your input')
+    def Mark_Task(self):
+        self.view_task()
+        which=input('enter number task to mark sucsefully')-1
+        if 0<=which<len(self.task):
+            self.task[which].mark_task()
+    def save_task(self,filename):
         with open(filename,'wb') as file:
             pickle.dump(self.task,file)
-            print('save succsessfully')
-    def lod(self,filname):
-       try:
-           with open(filname,'rb') as file:
-               self.task=pickle.load(file)
-               for i in self.name:
-                   print(i)
-       except FileNotFoundError:
-           print('file not found')
-       
-# if __name__=="__main__":
-while True:
-    print('list\n1.go agin \n 2.save in list \n 3.view that \n 4. exit')
-    n=int(input('entre :'))
-    if n==1:
-        ob=data()
-        # print(ob.colect())
-        ob.colect()
-    elif n==2:
-        ob.save('text.pkl')
-    elif n==3:
-        ob.lod('text.pkl')
-    elif n==4:
-        break
-        
-        
+    def load_task(self,filename):
+        try:
+            with open(filename,'rb') as file:
+               self.task= pickle.load(file)
+        except FileNotFoundError:
+            self.task=[]
+    def Display_menu(self):
+          print("==== Task Manager ====")
+          print("1. Add Task")
+          print("2. View Tasks")
+          print("3. Mark Task as Complete")
+          print("4. Delete Task")
+          print("5. Exit")
+    def run(self):
+        while True:
+            self.Display_menu()
+            chois =int(input('enter the choise:'))
+            if chois==1:
+                name=input('enter the taske:')
+                description=input('enter the description :')
+                task =Task(name,description)
+                self.add_task(task)
+            elif chois==2:
+                self.view_task()
+            elif chois==3:
+                self.Mark_Task()
+            elif chois==4:
+                self.remove_task()
+            elif chois==5:
+                self.save_task('new.pkl')
+                print('task added succesfuly !')
+                break
+            
+                  
+if __name__=='__main__':
+    object=TaskManager()
+    object.save_task('new.pkl')
+    object.run()
