@@ -102,7 +102,7 @@ class Task:
     def mark_task(self):
         self.status=True
     def __str__(self) -> str:
-        return f"task :{self.name}\ndescription : {self.description}\n status : {self.status}"
+        return f"task :{self.name}\ndescription : {self.description}\nstatus : {'complet' if self.status else 'incomplet'}"
 class TaskManager:
     def __init__(self):
         self.task=[]
