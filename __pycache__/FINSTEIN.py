@@ -2,11 +2,12 @@ import turtle
 
 window = turtle.Screen()
 my_turtle = turtle.Turtle()
-
-my_turtle.speed(1)
-my_turtle.color("black")
+window.bgcolor('#333')
+# -----------------------------------------------F
+my_turtle.speed(5)
+my_turtle.color("white")
 my_turtle.penup()
-my_turtle.goto(-100, 0)
+my_turtle.goto(-700, 0)
 my_turtle.pendown()
 my_turtle.fillcolor("blue")
 my_turtle.begin_fill()
@@ -31,72 +32,246 @@ my_turtle.forward(110)
 my_turtle.right(90)
 my_turtle.forward(30)
 my_turtle.end_fill()
+
+#                                    I
+
+my_turtle.up()
+my_turtle.goto(-550,0)
+my_turtle.down()
+my_turtle.right(90)
+my_turtle.forward(140)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(140)
+my_turtle.right(90)
+my_turtle.forward(30)
+
+
+my_turtle.up()
+my_turtle.right(90)
+my_turtle.forward(200)
+my_turtle.down()
+
+
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(30)
+
+
+
+# -------------------------------N-------------------------->
+my_turtle.up()
+my_turtle.goto(-500,0)
+my_turtle.down()
+my_turtle.begin_fill()
+my_turtle.forward(200)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(60)
+my_turtle.forward(190)
+my_turtle.left(150)
+my_turtle.forward(170)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(200)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(60)
+my_turtle.forward(185)
+my_turtle.left(150)
+my_turtle.forward(165)
+my_turtle.right(90)
+my_turtle.forward(35)
+my_turtle.end_fill()
+
+#---------------------------------------------s-------------------------->
+my_turtle.up()
+my_turtle.goto(-360,0)
+my_turtle.right(140)
+my_turtle.forward(100)
+my_turtle.right(40)
+my_turtle.forward(100)
+
+my_turtle.left(90)
+my_turtle.forward(70)
+x,y=my_turtle.position()
+
+my_turtle.down()
+my_turtle.circle(70,200)
+my_turtle.up()
+a,b=my_turtle.position()   #top first left s position
+my_turtle.right(20)
+my_turtle.forward(50)
+j,i=my_turtle.position()
+my_turtle.down()
+my_turtle.circle(70,180)
+l,m=my_turtle.position()
+my_turtle.up()
+my_turtle.goto(x,y)
+my_turtle.down()
+my_turtle.left(90)
+my_turtle.forward(30)
+my_turtle.left(-90)
+my_turtle.circle(40,180)
+
+my_turtle.forward(10)
+c,d=my_turtle.position()#     top left next s position 
+my_turtle.goto(l,m)
+my_turtle.up()
+my_turtle.goto(j,i)
+my_turtle.down()
+my_turtle.left(90)
+my_turtle.forward(30)
+my_turtle.left(-90)
+my_turtle.circle(40,180)
+my_turtle.goto(a,b)
+my_turtle.up()
+
+# -------------------------------T------------------>
+my_turtle.goto(-100,0)
+my_turtle.down()
+my_turtle.begin_fill()
+my_turtle.forward(170)
+my_turtle.left(90)
+my_turtle.forward(70)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(170)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(70)
+my_turtle.left(90)
+my_turtle.forward(170)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.end_fill()
+my_turtle.up()
+# ------------------------------------------E
+my_turtle.goto(20,0)
+my_turtle.down()
+
+my_turtle.right(90)
+my_turtle.forward(200)
+my_turtle.right(90)
+my_turtle.forward(130)
+my_turtle.right(90)
+my_turtle.forward(40)
+my_turtle.right(90)
+my_turtle.forward(100)
+my_turtle.left(90)
+my_turtle.forward(40)
+my_turtle.left(90)
+my_turtle.forward(100)
+my_turtle.right(90)
+my_turtle.forward(40)
+my_turtle.right(90)
+my_turtle.forward(100)
+my_turtle.left(90)
+my_turtle.forward(40)
+my_turtle.left(90)
+my_turtle.forward(100)
+my_turtle.right(90)
+my_turtle.forward(40)
+my_turtle.right(90)
+my_turtle.forward(130)
+my_turtle.up()
+
+# ------------------------------------------I-----------------------------
+my_turtle.goto(170,0)
+my_turtle.down()
+my_turtle.begin_fill()
+my_turtle.right(90)
+my_turtle.forward(140)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(140)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.end_fill()
+
+my_turtle.up()
+my_turtle.right(90)
+my_turtle.forward(200)
+my_turtle.down()
+
+my_turtle.begin_fill()
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.end_fill()
+my_turtle.up()
+
+# -------------------------------------------------------N-------------------------->
+my_turtle.goto(220,0)
+my_turtle.down()
+# my_turtle.begin_fill()
+my_turtle.forward(200)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(60)
+my_turtle.forward(190)
+my_turtle.left(150)
+my_turtle.forward(170)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(90)
+my_turtle.forward(200)
+my_turtle.right(90)
+my_turtle.forward(30)
+my_turtle.right(60)
+my_turtle.forward(185)
+my_turtle.left(150)
+my_turtle.forward(165)
+my_turtle.right(90)
+my_turtle.forward(35)
+my_turtle.up()
+# my_turtle.end_fill()
+
+
+
+
+
+# import turtle as t
+# pen = t.Turtle()
+# t.bgcolor('#9966cc')
+# t.delay(8)
+# ----------------------------------------heart---------------------->
+my_turtle.goto(500,0)
+my_turtle.down()
+my_turtle.color('red')
+my_turtle.begin_fill()
+my_turtle.right(180)
+my_turtle.forward(120)
+my_turtle.circle(80, 190)
+my_turtle.right(100)
+my_turtle.circle(80, 180)
+my_turtle.forward(160)
+my_turtle.left(90)
+# my_turtle.forward(50)
+# my_turtle.setpos(-60, 100)
+# my_turtle.end_fill()
+# def txt():
+#     my_turtle.up()
+#     my_turtle.setpos(-60, 100)
+#     my_turtle.color('red')
+#     my_turtle.write('I LoVe PyThON', font=("Comic Sans MS", 16))
+# txt()
+my_turtle.end_fill()
 window.exitonclick()
 
 
-# -------------------------------AI code ------------------
-# import turtle
-
-# window = turtle.Screen()
-# my_turtle = turtle.Turtle()
-# my_turtle.speed(1)
-
-# # Set the fill color to blue
-# my_turtle.fillcolor("blue")
-
-# # Move the turtle to the starting position
-# my_turtle.penup()
-# my_turtle.goto(-800, 0)
-# my_turtle.pendown()
-
-# # Start filling the shape
-# my_turtle.begin_fill()
-
-# # Draw the vertical line
-# my_turtle.left(90)
-# my_turtle.forward(200)
-
-# # Draw the horizontal line
-# my_turtle.right(90)
-# my_turtle.forward(130)
-
-# # Draw the first diagonal line
-# my_turtle.right(90)
-# my_turtle.forward(30)
-
-# # Draw the second diagonal line
-# my_turtle.right(90)
-# my_turtle.forward(100)
-
-# # Draw the third diagonal line
-# my_turtle.left(90)
-# my_turtle.forward(30)
-
-# # Draw the fourth diagonal line
-# my_turtle.left(90)
-# my_turtle.forward(100)
-
-# # Draw the fifth diagonal line
-# my_turtle.right(90)
-# my_turtle.forward(30)
-
-# # Draw the sixth diagonal line
-# my_turtle.right(90)
-# my_turtle.forward(100)
-
-# # Draw the seventh diagonal line
-# my_turtle.left(90)
-# my_turtle.forward(110)
-
-# # Draw the eighth diagonal line
-# my_turtle.right(90)
-# my_turtle.forward(30)
-
-# # Stop filling the shape
-# my_turtle.end_fill()
-
-# # Lift the pen
-# my_turtle.penup()
-
-# # Exit the screen when the user clicks on it
-# window.exitonclick()
